@@ -1,0 +1,374 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* header part css code start */
+.header {
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.9),rgba(4,9,30,.09)),url(../images/banner.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2% 6%;
+    position: sticky;
+}
+nav img{
+    width: 150px;
+}
+.nav_links{
+    flex: 1;
+    text-align: right;
+}
+.nav_links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav_links ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.nav_links ul li::after{
+    content: "";
+    width: 0;
+    height: 2px;
+    background: rgb(255, 69, 0);
+    display: block;
+    margin: 3px;
+    transition: .7s;
+}
+.nav_links ul li:hover::after{
+    width: 100%;
+    transition:.7s;
+}
+
+.text_box{
+    width: 90%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.text_box h1{
+    font-size: 60px;
+}
+.text_box p {
+    font-size: 18px;
+    margin: 10px 0 40px;
+}
+
+.hero_btn{
+    border: 1px solid white;
+    display: inline-block;
+    padding: 12px 34px;
+    font-size: 15px;
+    color: white;
+    text-decoration: none;
+    position: relative;
+    background: transparent;
+    cursor: pointer;
+}
+
+.hero_btn:hover{
+    background-color: rgb(228, 217, 217);
+    color: black;
+    transition: all linear 0.6s;
+    border: none;
+    border-radius:20px;
+    text-transform: uppercase;
+}
+/* header part css code end */
+
+
+/* course css code start */
+.course{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+h1{
+    font-size: 35px;
+    font-weight: 500;
+}
+p{
+    color: gray;
+    font-size:16px;
+    font-weight: 300;
+    line-height:30px;
+    padding: 10px;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.course_column{
+    flex-basis: 31%;
+    background:rgb(223, 216, 216);
+    padding: 20px 15px;
+    border-radius: 10px;
+    margin-bottom:5px;
+    box-sizing: border-box;
+    transition : .5s;
+}
+.course_column:hover{
+    box-shadow: 5px 5px 10px rgb(129, 127, 127);
+}
+/* course css code end */
+
+/* campus css code start */
+.campus{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.campus_column{
+    flex-basis: 32%;
+    border-radius: 20px;
+    margin-bottom: 30px;
+     position: relative;
+    overflow: hidden; 
+}
+.campus_column img{
+    width: 100%;
+}
+.layer{
+    background: transparent;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    transition: all linear 0.5s
+}
+.layer:hover{
+    background: rgb(233, 171, 171,.5);
+
+}
+
+.layer h3{
+    width: 100%;
+    color: black;
+    font-size:25px;
+    font-weight: 400;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition:all linear 0.5s;
+    opacity: 0;
+}
+.layer:hover h3 {
+    bottom: 50%;
+    opacity :1;
+}
+/* campus css code end */
+
+
+/* facilities css code start */
+.facilities{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 80px;
+}
+.facilities_column{
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom : 10px;
+}
+.facilities_column img{
+    width: 100%;
+    border-radius: 10px;
+}
+/* facilities css code end */
+
+/* testimonials css code start */
+.tetimonials{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top:100px
+}
+
+.testimonial_column{
+    flex-basis: 45%;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    text-align:left;
+    background: #ddcaca;
+    padding: 20px;
+    cursor: pointer;
+    display: flex;
+}
+.testimonial_column img{
+    height: 40px;
+    border-radius: 20px;
+    margin-left: 5px;
+    margin-right: 30px;
+}
+.testimonial_column h3{
+    margin-top: 15px;
+    text-align: left;
+}
+.testimonial_column .fas{
+    color: goldenrod;
+}
+
+/* testimonials css code end */
+
+
+/* call to action css code start */
+.cta{
+    margin: 100px auto;
+    width: 80%;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../images/banner2.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    padding: 100px  0;
+    border-radius:20px;
+}
+.cta h1{
+    color: white;
+    margin-bottom:40px;
+    padding: 0;
+}
+/* call to action css code end */
+
+/* footer css code start */
+.footer{
+    width:100%;
+    text-align: center;
+    padding: 30px 0;
+}
+.footer h2 {
+    font-size: 30px;
+    font-weight: 500;
+    margin-top: 20px;
+}
+.icons .fab {
+    margin : 15px 15px;
+    font-size: 20px;
+}
+.icons .fab:hover{
+    color: red;
+}
+/* footer css code end */
+
+/* About Page css code start */
+.sub_header{
+    height:50vh;
+    width: 100%;
+    background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,.4)),url(images/background.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+}
+
+.sub_header h1{
+    color: white;
+    padding-top: 90px;
+}
+.about_us {
+    width: 80%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+
+.about_col{
+    flex-basis: 48%;
+}
+.about_col img{
+    width: 100%;
+}
+.red_btn{
+    border: 1px solid red;
+    color: black;
+}
+/* About Page css code end */
+
+
+/* blog content css code start */
+.blog_content{
+    width: 80%;
+    margin: auto;
+    padding: 60px 0;
+}
+
+.blog_left{
+    flex-basis:65%;
+}
+.blog_left img{
+    width: 100%;
+    border-radius:20px;
+}
+.blog_left h2{
+    padding-top: 50px;
+    text-align: center;
+}
+
+.blog_right{
+    flex-basis: 32%;
+}
+.blog_right h3{
+    background: #f44336;
+    color: white;
+    padding: 8px 0;
+    font-size:15px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.blog_right div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    box-sizing: border-box;
+
+}
+.comment_box{
+    border: 1px solid rgb(216, 214, 214);
+    margin: 50px 0;
+    padding: 10px 20px;
+    border-radius:10px
+}
+.comment_box h3{
+    text-align: center;
+}
+
+.comment_form input, .comment_form textarea {
+    width: 90%;
+    margin: 10px 0;
+    padding: 10px;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    background: rgb(238, 228, 228);
+    border-radius:5px;
+}
+.comment_form button{
+    margin: 10px 0;
+    background-color: #f44336;
+    border: none;
+    border-radius:5px;
+}
+/* blog content css code end */
